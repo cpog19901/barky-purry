@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+.images-container{
+  display: flex;
+  
+}
+
+.images{
+ flex: 1;
+align-content: space-around;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
