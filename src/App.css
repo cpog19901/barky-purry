@@ -1,9 +1,16 @@
+html{
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
 body{
-  background-color: #400094;
-  background-image: url("https://www.transparenttextures.com/patterns/food.png");
+  
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   overflow-x: hidden;
-
+  background-color: rgb(13, 117, 45);
+  background-image: url("https://www.transparenttextures.com/patterns/food.png");
+  overflow-x: hidden;
 }
 
 
@@ -21,30 +28,86 @@ margin: auto;
 
 h1{
   margin: 0;
-  color: whitesmoke;
+ 
   font-family: 'Sigmar One', cursive;
   
 }
 
+.animal-pic{
+  width: 20%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  display: block;
+  margin: auto;
+  pointer-events: none;
+}
+
+
+.cats-dogs-img{
+  width: 150px;
+      margin-top: 25px;
+  
+}
 
 .images-container{
  display: flex;
  flex-wrap: wrap;
  align-items: baseline;
  flex: 1;
+width: 100%;
 
+
+margin-top: 50px;
+}
+
+.animal-btn{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: none;
+  margin: 25px;
+  cursor: pointer;
+  font-family: 'Sigmar One', cursive;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.purry-title{
+  font-family: 'Covered By Your Grace', cursive;
 }
 
 
 
+
+.animal-btn:hover {
+  background-color: rgb(250, 255, 250);
+  transition: ease-in;
+  transition-duration: 200ms;
+  width: 205px;
+  height: 205px;
+
+}
+
+.main-title{
+  background-color: #064e48;
+background-image: url("https://www.transparenttextures.com/patterns/light-sketch.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  padding: 40px 20px;
+  color: whitesmoke;
+  font-size: 1.4rem;
+  position: relative;
+  border-bottom: 2px solid whitesmoke;
+}
+
 .main-content{
   position: relative;
+  
 }
 
 .image-container{
   border-radius: 10px;
 padding: 10px;
-
+border-radius: 10px;
+margin: auto;
 
 
 }
@@ -53,7 +116,7 @@ padding: 10px;
   border-radius: 10px;
   cursor: pointer;
   border: 2px solid white;
-  
+  width: 100%;
   
 }
 
@@ -79,10 +142,26 @@ border-radius: 10px;
 
 .close-box-btn{
   background-color: rgba(255, 255, 255, 0.9);
-  color: blueviolet;
+  color: black;
+}
+
+.close-box-btn:hover{
+  background-color: rgb(255, 255, 255);
+  transition: ease-in;
+  transition-duration: 200ms;
+ 
+
+}
+
+
+.button-container{
+margin-top: 50px;
+  display: block;
+
 }
 
 .detail-box{
+  background-image: url("https://www.transparenttextures.com/patterns/food.png");
   background-color: rgba(46, 46, 46, 0.9);
   transform: translateX(-50%);
   width: 80%;
@@ -97,8 +176,25 @@ border-radius: 10px;
   color: whitesmoke;
  transition-duration: 1000ms;
  transition: ease-in;
+ z-index: 50;
  
 }
+
+
+.pagination{
+  display: block;
+}
+
+.page-number{
+ 
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  width: 50px;
+  height: 50px;  
+  margin: 10px;
+}
+
 
 .detail-box h1{
   margin: 25px;
@@ -119,16 +215,7 @@ border-radius: 10px;
   }
 }
 
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
+
 
 .App-link {
   color: #61dafb;

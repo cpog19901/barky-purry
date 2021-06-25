@@ -3,10 +3,9 @@ import DetailBox from './DetailBox';
 
 const Controls = () => {
 
-    const [showGallery, setShowGallery] = useState(false)
+    
     const [loadButton, setLoadButton] = useState(false)
     const [images, setImages] = useState([]);
-    const [offSet, setOffset] = useState(0)
     const [currentImage, setCurrentImage] = useState();
     const [boxOpen, setBoxOpen] = useState(false)
 
@@ -45,8 +44,8 @@ const Controls = () => {
   
 
     return (
-        <div class="main-content">
-        {boxOpen ? <div class="detail-box">
+        <div className="main-content">
+        {boxOpen ? <div className="detail-box">
         <button className="close-box-btn" onClick={closeBox}>X</button>
         {images
         .filter(image => image.id === currentImage)
@@ -54,29 +53,35 @@ const Controls = () => {
         <h1>{image.title}</h1>
         <img key={image.id} id={image.id} className="image-in-box" src={image.images.original.url} onClick={imageClicked}/>
         <h2>Import date: {image.import_datetime}</h2>
-        <h3>{image.source_post_url}</h3>
+        <a href={image.source_post_url}></a>
         <h4>Rating: {image.rating}</h4>
         </div>
         
         )}
             
         </div>: null }
+        <div className="button-container">
         <form action="">
-        <button className="animal-btn" onClick={buttonClicked} value="cats">Cats</button>
-        <button className="animal-btn" onClick={buttonClicked} value="dogs">Dogs</button>
+       
+        <button className="animal-btn" onClick={buttonClicked} value="cats"> <img className="animal-pic" onClick={buttonClicked} value="cats"  src="/images/cat.svg" alt="" /> Cats</button>
+        <button className="animal-btn" onClick={buttonClicked} value="dogs"> <img className="animal-pic" onClick={buttonClicked} value="dogs" src="/images/dog-seating.svg" alt="" /> Dogs</button>
         </form>
-
+        </div>
         <div className="images-container">
         {images
-        .map(image => <div className="image-container"> <img key={image.id} id={image.id} className="image" src={image.images.downsized.url} onClick={imageClicked}/> </div>
+        .map(image => 
+        <div key={image.id} className="image-container"> 
+        <img key={image.id} id={image.id} className="image" src={image.images.downsized.url} onClick={imageClicked}/> 
+        </div>
         )}
-         {loadButton ? 
+          
+  </div>
+  {loadButton ? 
          <div className="pagination">
          <button className="page-number"href="" value={1} onClick={pageClicked}> 1 </button>
          <button className="page-number"href="" value={2} onClick={pageClicked}> 2</button>
          </div>
-         :null}  
-  </div>
+         :null} 
   </div>
     );
 };

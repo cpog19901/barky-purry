@@ -6,9 +6,10 @@ function App() {
 
   return (
     <div className="App">
-    
-    <h1>Barky Purry</h1>
-  
+    <div className="main-title">
+    <h1>Barky <span class="purry-title">Purry</span> </h1>
+    <img className="cats-dogs-img"src="images/catsanddogs.svg" alt="" />
+    </div>
    
     <Controls/>
     
