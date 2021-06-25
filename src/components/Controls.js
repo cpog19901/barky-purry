@@ -18,7 +18,7 @@ const Controls = () => {
     const buttonValue = e.target.value;
   
 
-    fetch('http://api.giphy.com/v1/gifs/search?api_key=qeYXgCES3uM22GY3CucKAMQNlzL8X5vL&q='+buttonValue+"&limit=25")
+    fetch('https://api.giphy.com/v1/gifs/search?api_key=qeYXgCES3uM22GY3CucKAMQNlzL8X5vL&q='+buttonValue+"&limit=25")
     .then(response => response.json())
     .then(data =>  setImages(data.data))
     
