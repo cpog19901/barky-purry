@@ -6,7 +6,10 @@ function App() {
 
   return (
     <div className="App">
-    <h2>Barky Purry</h2>
+    
+    <h1>Barky Purry</h1>
+  
+   
     <Controls/>
     
     </div>
