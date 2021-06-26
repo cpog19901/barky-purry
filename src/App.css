@@ -5,12 +5,11 @@ html{
 
 
 body{
-  
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   overflow-x: hidden;
   background-color: rgb(13, 117, 45);
   background-image: url("https://www.transparenttextures.com/patterns/food.png");
   overflow-x: hidden;
+  
 }
 
 
@@ -54,21 +53,22 @@ h1{
  flex-wrap: wrap;
  align-items: baseline;
  flex: 1;
-width: 100%;
+width: 50%;
+margin: auto ;
+margin-bottom: 25px;
 
-
-margin-top: 50px;
 }
 
 .animal-btn{
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: none;
+  border: 6px solid  rgb(23, 141, 72);;
   margin: 25px;
   cursor: pointer;
   font-family: 'Sigmar One', cursive;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
 }
 
 .purry-title{
@@ -82,17 +82,18 @@ margin-top: 50px;
   background-color: rgb(250, 255, 250);
   transition: ease-in;
   transition-duration: 200ms;
-  width: 205px;
-  height: 205px;
+  width: 210px;
+  height: 210px;
+  
 
 }
 
 .main-title{
   background-color: #064e48;
 background-image: url("https://www.transparenttextures.com/patterns/light-sketch.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
   padding: 40px 20px;
-  color: whitesmoke;
+  color: rgb(33, 216, 201);
   font-size: 1.4rem;
   position: relative;
   border-bottom: 2px solid whitesmoke;
@@ -117,7 +118,7 @@ margin: auto;
   cursor: pointer;
   border: 2px solid white;
   width: 100%;
-  
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 image:hover{
@@ -129,6 +130,12 @@ image:hover{
 .image-in-box{
 width: 45%;
 border-radius: 10px;
+}
+
+.img-link{
+  background-color: whitesmoke;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 .close-box-btn{
@@ -183,10 +190,16 @@ margin-top: 50px;
 
 .pagination{
   display: block;
+  
+}
+
+.pages-title{
+  font-family: 'Sigmar One', cursive;
+  color: whitesmoke;
 }
 
 .page-number{
- 
+  font-family: 'Sigmar One', cursive;
   cursor: pointer;
   border-radius: 50%;
   border: none;
@@ -204,28 +217,20 @@ margin-top: 50px;
   padding: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.pagination{
+ padding: 40px;
+  background-color: #064e48;
+background-image: url("https://www.transparenttextures.com/patterns/light-sketch.png");
+border-top: 2px solid whitesmoke;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
