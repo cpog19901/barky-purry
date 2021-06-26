@@ -63,8 +63,8 @@ const Controls = () => {
         <div className="button-container">
         <form action="">
        
-        <button className="animal-btn" onClick={buttonClicked} value="cats"> <img className="animal-pic" onClick={buttonClicked} value="cats"  src="/images/cat.svg" alt="" /> Cats</button>
-        <button className="animal-btn" onClick={buttonClicked} value="dogs"> <img className="animal-pic" onClick={buttonClicked} value="dogs" src="/images/dog-seating.svg" alt="" /> Dogs</button>
+        <button className="animal-btn" onClick={buttonClicked} value="cats"> <img className="animal-pic" onClick={buttonClicked} value="cats"  src="images/cat.svg" alt="" /> Cats</button>
+        <button className="animal-btn" onClick={buttonClicked} value="dogs"> <img className="animal-pic" onClick={buttonClicked} value="dogs" src="images/dog-seating.svg" alt="" /> Dogs</button>
         </form>
         </div>
         <div className="images-container">
