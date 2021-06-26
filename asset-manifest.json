@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/barky-purry/static/css/main.b1f06a4c.chunk.css",
-    "main.js": "/barky-purry/static/js/main.5d79930b.chunk.js",
-    "main.js.map": "/barky-purry/static/js/main.5d79930b.chunk.js.map",
+    "main.js": "/barky-purry/static/js/main.48fcf3ec.chunk.js",
+    "main.js.map": "/barky-purry/static/js/main.48fcf3ec.chunk.js.map",
     "runtime-main.js": "/barky-purry/static/js/runtime-main.120f26b0.js",
     "runtime-main.js.map": "/barky-purry/static/js/runtime-main.120f26b0.js.map",
     "static/js/2.26c07493.chunk.js": "/barky-purry/static/js/2.26c07493.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.120f26b0.js",
     "static/js/2.26c07493.chunk.js",
     "static/css/main.b1f06a4c.chunk.css",
-    "static/js/main.5d79930b.chunk.js"
+    "static/js/main.48fcf3ec.chunk.js"
   ]
 }
