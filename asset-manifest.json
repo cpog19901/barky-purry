@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/barky-purry/static/css/main.b1f06a4c.chunk.css",
-    "main.js": "/barky-purry/static/js/main.48fcf3ec.chunk.js",
-    "main.js.map": "/barky-purry/static/js/main.48fcf3ec.chunk.js.map",
+    "main.css": "/barky-purry/static/css/main.9a7944c8.chunk.css",
+    "main.js": "/barky-purry/static/js/main.f4cfe51d.chunk.js",
+    "main.js.map": "/barky-purry/static/js/main.f4cfe51d.chunk.js.map",
     "runtime-main.js": "/barky-purry/static/js/runtime-main.120f26b0.js",
     "runtime-main.js.map": "/barky-purry/static/js/runtime-main.120f26b0.js.map",
-    "static/js/2.26c07493.chunk.js": "/barky-purry/static/js/2.26c07493.chunk.js",
-    "static/js/2.26c07493.chunk.js.map": "/barky-purry/static/js/2.26c07493.chunk.js.map",
+    "static/js/2.ab9d1781.chunk.js": "/barky-purry/static/js/2.ab9d1781.chunk.js",
+    "static/js/2.ab9d1781.chunk.js.map": "/barky-purry/static/js/2.ab9d1781.chunk.js.map",
     "index.html": "/barky-purry/index.html",
-    "static/css/main.b1f06a4c.chunk.css.map": "/barky-purry/static/css/main.b1f06a4c.chunk.css.map",
-    "static/js/2.26c07493.chunk.js.LICENSE.txt": "/barky-purry/static/js/2.26c07493.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/barky-purry/static/media/logo.6ce24c58.svg"
+    "static/css/main.9a7944c8.chunk.css.map": "/barky-purry/static/css/main.9a7944c8.chunk.css.map",
+    "static/js/2.ab9d1781.chunk.js.LICENSE.txt": "/barky-purry/static/js/2.ab9d1781.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.120f26b0.js",
-    "static/js/2.26c07493.chunk.js",
-    "static/css/main.b1f06a4c.chunk.css",
-    "static/js/main.48fcf3ec.chunk.js"
+    "static/js/2.ab9d1781.chunk.js",
+    "static/css/main.9a7944c8.chunk.css",
+    "static/js/main.f4cfe51d.chunk.js"
   ]
 }
