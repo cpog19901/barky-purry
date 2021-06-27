@@ -14,7 +14,7 @@ const MainPage = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [imagesPerPage]= useState(25);
     const [isLinkAvailable] = useState("")
-    const [load] = useState(false)
+  
 
 
     // find out what button was clicked through event handler
@@ -23,23 +23,14 @@ const MainPage = () => {
      
       e.preventDefault();
     const serachQuery = e.target.value;
-  console.log(serachQuery)
-    //send request for data with by getting the value of button pressed and using it as a search query
-
     fetch('https://api.giphy.com/v1/gifs/search?api_key=qeYXgCES3uM22GY3CucKAMQNlzL8X5vL&q='+serachQuery)
     .then(response => response.json())
-   
     .then(data =>  setImages(data.data))
     .then(setLoadButton(true))
-    
     }
 
 
-    const pageClicked = (e) =>{
-      const pageValue =e.target.value;
-     
-     console.log(pageValue)
-     }
+    
 
     //get current posts 
 
@@ -87,16 +78,16 @@ const MainPage = () => {
           buttonClicked={buttonClicked}
         />
        {/* display Gallery component and props to pass to the component */}
-       {load ? <Gallery
+
+        <Gallery
   images ={currentImages}
   imageClicked={imageClicked}
-/>  : null} 
+/> 
 
 {/* display Pagination component and props to pass to the component */}
 
 <Pagination
      loadButton ={loadButton}
-      pageClicked ={pageClicked}
       imagesPerPage={imagesPerPage}
       totalImages={images.length}
       paginate ={paginate}
