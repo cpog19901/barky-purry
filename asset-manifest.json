@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/barky-purry/static/css/main.6e0227c2.chunk.css",
-    "main.js": "/barky-purry/static/js/main.5d0ad91a.chunk.js",
-    "main.js.map": "/barky-purry/static/js/main.5d0ad91a.chunk.js.map",
+    "main.css": "/barky-purry/static/css/main.532babed.chunk.css",
+    "main.js": "/barky-purry/static/js/main.a66e2102.chunk.js",
+    "main.js.map": "/barky-purry/static/js/main.a66e2102.chunk.js.map",
     "runtime-main.js": "/barky-purry/static/js/runtime-main.120f26b0.js",
     "runtime-main.js.map": "/barky-purry/static/js/runtime-main.120f26b0.js.map",
     "static/js/2.ab9d1781.chunk.js": "/barky-purry/static/js/2.ab9d1781.chunk.js",
     "static/js/2.ab9d1781.chunk.js.map": "/barky-purry/static/js/2.ab9d1781.chunk.js.map",
     "index.html": "/barky-purry/index.html",
-    "static/css/main.6e0227c2.chunk.css.map": "/barky-purry/static/css/main.6e0227c2.chunk.css.map",
+    "static/css/main.532babed.chunk.css.map": "/barky-purry/static/css/main.532babed.chunk.css.map",
     "static/js/2.ab9d1781.chunk.js.LICENSE.txt": "/barky-purry/static/js/2.ab9d1781.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.120f26b0.js",
     "static/js/2.ab9d1781.chunk.js",
-    "static/css/main.6e0227c2.chunk.css",
-    "static/js/main.5d0ad91a.chunk.js"
+    "static/css/main.532babed.chunk.css",
+    "static/js/main.a66e2102.chunk.js"
   ]
 }
