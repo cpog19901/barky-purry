@@ -7,7 +7,7 @@ html{
 body{
   overflow-x: hidden;
   background-color: rgb(13, 117, 45);
-  background-image: url("https://www.transparenttextures.com/patterns/food.png");
+  background-image: url("./food.png");
   overflow-x: hidden;
 }
 
@@ -16,11 +16,6 @@ body{
 .App {
 text-align: center;
 margin: auto;
-}
-
-.jumbo{
-  background-color: whitesmoke;
-  width: 100%;
 }
 
 h1{
@@ -85,7 +80,7 @@ margin-bottom: 25px;
 
 .main-title{
   background-color: #064e48;
-background-image: url("https://www.transparenttextures.com/patterns/light-sketch.png");
+background-image: url("./light-sketch.png");
   padding: 40px 20px;
   color: rgb(33, 216, 201);
   font-size: 1.4rem;
@@ -167,7 +162,7 @@ border-radius: 10px;
 }
 
 .detail-box{
-  background-image: url("https://www.transparenttextures.com/patterns/food.png");
+  background-image: url("./food.png");
   background-color: rgba(46, 46, 46, 1);
   transform: translateX(-50%);
   width: 80%;
@@ -240,7 +235,7 @@ border-radius: 10px;
 .pagination{
  padding: 40px;
   background-color: #064e48;
-background-image: url("https://www.transparenttextures.com/patterns/light-sketch.png");
+background-image: url("light-sketch.png");
 border-top: 2px solid whitesmoke;
 
 }
