@@ -1,6 +1,6 @@
 
 import './App.css';
-import Controls from "./components/Controls"
+import MainPage from "./components/MainPage"
 function App() {
 
 
@@ -11,7 +11,7 @@ function App() {
     <img className="cats-dogs-img"src="images/catsanddogs.svg" alt="" />
     </div>
    
-    <Controls
+    <MainPage
      
     />
     

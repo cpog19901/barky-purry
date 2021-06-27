@@ -4,7 +4,7 @@ import Buttons from "./Buttons";
 import Gallery from './Gallery';
 import Pagination from './Pagination';
 
-const Controls = () => {
+const MainPage = () => {
 
     
     const [loadButton, setLoadButton] = useState(false)
@@ -13,7 +13,8 @@ const Controls = () => {
     const [boxOpen, setBoxOpen] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
     const [imagesPerPage]= useState(25);
-    const [load, setLoad] = useState(false)
+    const [isLinkAvailable] = useState("")
+    const [load] = useState(false)
 
 
     // find out what button was clicked through event handler
@@ -22,15 +23,23 @@ const Controls = () => {
      
       e.preventDefault();
     const serachQuery = e.target.value;
-  
+  console.log(serachQuery)
+    //send request for data with by getting the value of button pressed and using it as a search query
 
     fetch('https://api.giphy.com/v1/gifs/search?api_key=qeYXgCES3uM22GY3CucKAMQNlzL8X5vL&q='+serachQuery)
     .then(response => response.json())
-    .then(setLoad(true))
+   
     .then(data =>  setImages(data.data))
     .then(setLoadButton(true))
-    .then(setLoad(false))
+    
     }
+
+
+    const pageClicked = (e) =>{
+      const pageValue =e.target.value;
+     
+     console.log(pageValue)
+     }
 
     //get current posts 
 
@@ -38,15 +47,13 @@ const Controls = () => {
     const indexOfFirstImage = indexOfLastImage - imagesPerPage;
     const currentImages = images.slice(indexOfFirstImage, indexOfLastImage)
 
+    //set current page with paginate function
+
     const paginate = (pageNumber) =>{
       setCurrentPage(pageNumber)
     }
 
-    const pageClicked = (e) =>{
-     const pageValue =e.target.value;
-    
-    console.log(pageValue)
-    }
+  // get the id of the image clicked and open detail box
 
     const imageClicked =(event) =>{ 
             const clickedImage = (event.target.id);
@@ -55,16 +62,22 @@ const Controls = () => {
             
     }
 
+
+    //close detail box
     const closeBox = () =>{
         setBoxOpen(false);
     }
   
 
     return (
-        <div className="main-content">
-        
+      <div className="main-content">
+      
+{/* open detail box if boxOpen is set to true */}
+{/* also display Deata component and props to pass to the component */}
+     
       {boxOpen ? <DetailBox
           closeBox={closeBox}
+          isLinkAvailable={isLinkAvailable}
           images ={images}
           currentImage ={currentImage}
           imageClicked ={imageClicked}
@@ -73,13 +86,14 @@ const Controls = () => {
         <Buttons
           buttonClicked={buttonClicked}
         />
-
-        {load ? <h1>Loading</h1>: null}
-
-<Gallery
+       {/* display Gallery component and props to pass to the component */}
+       {load ? <Gallery
   images ={currentImages}
   imageClicked={imageClicked}
-/>
+/>  : null} 
+
+{/* display Pagination component and props to pass to the component */}
+
 <Pagination
      loadButton ={loadButton}
       pageClicked ={pageClicked}
@@ -87,10 +101,10 @@ const Controls = () => {
       totalImages={images.length}
       paginate ={paginate}
 
-  />
+  /> 
     
-  </div>
+  </div> 
     );
 };
 
-export default Controls;
+export default MainPage;

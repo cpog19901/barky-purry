@@ -9,27 +9,23 @@ body{
   background-color: rgb(13, 117, 45);
   background-image: url("https://www.transparenttextures.com/patterns/food.png");
   overflow-x: hidden;
-  
 }
 
 
 
 .App {
-  text-align: center;
+text-align: center;
 margin: auto;
-
 }
 
 .jumbo{
   background-color: whitesmoke;
-    width: 100%;
+  width: 100%;
 }
 
 h1{
   margin: 0;
- 
   font-family: 'Sigmar One', cursive;
-  
 }
 
 .animal-pic{
@@ -44,8 +40,7 @@ h1{
 
 .cats-dogs-img{
   width: 150px;
-      margin-top: 25px;
-  
+  margin-top: 25px;
 }
 
 .images-container{
@@ -91,7 +86,6 @@ margin-bottom: 25px;
 .main-title{
   background-color: #064e48;
 background-image: url("https://www.transparenttextures.com/patterns/light-sketch.png");
-
   padding: 40px 20px;
   color: rgb(33, 216, 201);
   font-size: 1.4rem;
@@ -101,7 +95,6 @@ background-image: url("https://www.transparenttextures.com/patterns/light-sketch
 
 .main-content{
   position: relative;
-  
 }
 
 .image-container{
@@ -109,8 +102,6 @@ background-image: url("https://www.transparenttextures.com/patterns/light-sketch
 padding: 10px;
 border-radius: 10px;
 margin: auto;
-
-
 }
 
 .image{
@@ -122,9 +113,7 @@ margin: auto;
 }
 
 image:hover{
-  
   border: 2px solid white;
-  
 }
 
 .image-in-box{
@@ -133,9 +122,19 @@ border-radius: 10px;
 }
 
 .img-link{
-  background-color: whitesmoke;
+  
   padding: 15px;
   border-radius: 10px;
+  word-wrap: break-word;
+  margin: 15px 0;
+  display: block;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.import-date{
+  display: block;
+  font-weight: bold;
 }
 
 .close-box-btn{
@@ -156,20 +155,18 @@ border-radius: 10px;
   background-color: rgb(255, 255, 255);
   transition: ease-in;
   transition-duration: 200ms;
- 
-
 }
 
 
 .button-container{
-margin-top: 50px;
+  margin-top: 50px;
   display: block;
 
 }
 
 .detail-box{
   background-image: url("https://www.transparenttextures.com/patterns/food.png");
-  background-color: rgba(46, 46, 46, 0.9);
+  background-color: rgba(46, 46, 46, 1);
   transform: translateX(-50%);
   width: 80%;
   left: 50%;
@@ -185,6 +182,26 @@ margin-top: 50px;
  transition: ease-in;
  z-index: 50;
  
+ 
+}
+
+
+
+.detail-header{
+  color: rgb(71, 69, 69);
+  background-color: whitesmoke;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.image-details{
+  width: 200px;
+}
+
+
+.image-in-box{
+  width: 100%;
 }
 
 
@@ -226,11 +243,48 @@ border-top: 2px solid whitesmoke;
 
 }
 
+.button-info{
+  font-family: 'Sigmar One', cursive;
+  
+  color: whitesmoke;
+  font-size: large;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .image-in-box{
+    width: 50%;
+  }
+
+  .image-details{
+    margin: 50px;
+  }
+
+ 
+  
+}
+  
+
+
+@media only screen and (min-width: 992px) {
+  .details-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+    
+}
+
+.detail-box{
+  overflow-y: hidden;
+  height: fit-content;
+ /* overflow-y: scroll; */
+
+}
 
 
 
-
-
+}
 
 
 

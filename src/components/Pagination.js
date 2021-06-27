@@ -10,12 +10,13 @@ const Pagination = ({imagesPerPage, totalImages, loadButton, paginate}) => {
 
     return (
         <div>
+            
             {loadButton ? 
          <div className="pagination">
          <h2 className="pages-title">Pages</h2>
                 {pageNumbers.map(number => 
                 
-                <button className="page-number" onClick={() =>paginate(number)}>{number}</button>)}
+                <button key ={number}className="page-number" onClick={() =>paginate(number)}>{number}</button>)}
          </div>
          :null} 
         </div>
